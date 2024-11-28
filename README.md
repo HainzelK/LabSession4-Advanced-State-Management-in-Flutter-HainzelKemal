@@ -1,8 +1,8 @@
 # flutter_provider
 
-late GlobalState globalState -> late utk declare variabel yg not null tp diinisialisasi nanti
+    late GlobalState globalState -> late utk declare variabel yg not null tp diinisialisasi nanti
 
-Global state package -> atur counternya punya layout, mirip template. sekalian juga ada functinalities nya dalam
+    Global state package -> atur counternya punya layout, mirip template. sekalian juga ada functinalities nya dalam
 
     super.initState();
     globalState = GlobalState(); -> setup awal untuk proyek flutter spy nd rusak, setup jg global state spy bs dipake nnti
