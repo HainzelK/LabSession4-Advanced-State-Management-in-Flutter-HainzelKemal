@@ -1,9 +1,12 @@
 # flutter_provider
 
 late GlobalState globalState -> late utk declare variabel yg not null tp diinisialisasi nanti
+
 Global state package -> atur counternya punya layout, mirip template. sekalian juga ada functinalities nya dalam
+
     super.initState();
     globalState = GlobalState(); -> setup awal untuk proyek flutter spy nd rusak, setup jg global state spy bs dipake nnti
+    
 DragItemWidget -> utk simpan datanya yg di draggablewidget nnti.
 (request) async -> minta data yg mau didrag tetapi aplikasi tidak stop untuk minta itu data, klo ada itu data baru lanjut kerja drag item
 allowedOperations: () => [DropOperation.copy], -> dispesifikasi apa yg bs dibuat disini spy dia cm buat itu, nda ada hal lain dia buat
