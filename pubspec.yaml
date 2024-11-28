@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
   global_state_manager:
     path: global_state_manager
+  dotted_border: ^2.1.0 
+  super_drag_and_drop: ^0.8.24
 
 dev_dependencies:
   flutter_test:
