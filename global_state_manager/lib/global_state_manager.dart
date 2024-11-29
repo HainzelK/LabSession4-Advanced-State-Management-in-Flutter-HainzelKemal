@@ -9,7 +9,7 @@ class CounterItem {
   int counter;
   Color color;
 
-  CounterItem({required this.label, this.counter = 0, this.color = Colors.black});
+  CounterItem({required this.label, this.counter = 0, this.color = const Color.fromARGB(255, 85, 84, 84)});
 
   /// Increment the counter by 1.
   void increment() {

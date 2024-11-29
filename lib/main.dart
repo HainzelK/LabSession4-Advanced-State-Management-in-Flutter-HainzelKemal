@@ -40,14 +40,14 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               // Display the list of counters dynamically with drag-and-drop
               for (int i = 0; i < globalState.counters.length; i++) ...[
-                DragItemWidget(
-                  dragItemProvider: (request) async {
+                DragItemWidget( //de kek utk simpan datanya yg di draggablewidget nnti.
+                  dragItemProvider: (request) async { //minta data yg mau didrag tetapi aplikasi tidak stop untuk minta itu data, klo ada itu data baru lanjut kerja ini 
                     final item = DragItem(localData: {'index': i});
                     item.add(Formats.plainText('Counter $i'));
                     return item;
                   },
                   allowedOperations: () => [DropOperation.copy],
-                  child: DraggableWidget(
+                  child: DraggableWidget( //de kek box spy user bs interaksi baru drag and drop (drag item)
                     child: Container(
                       padding: EdgeInsets.all(8),
                       color: globalState.counters[i].color,
